@@ -1,0 +1,129 @@
+
+<div class="bookademo" id="bkdemobtn">
+  <button (click)="openDemo()">Request a Demo</button>
+</div>
+<div id="bookademotemplate" class="sidenavdemo">
+  <form [formGroup]="bookADemoForm" id="bookADemoForm" (ngSubmit)="onSubmit()">
+    <div class="flex">
+      <h4 class="text-uppercase">Email Us</h4>
+      <i class="fa fa-times text-left close-icon" (click)="closeDemo()"></i>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+        <input type="text" class="form-control" formControlName="name" placeholder="Name*"/>
+        <div *ngIf="loginfromsubmitted && this.bookADemoForm.controls.name.errors">
+          <small class="text-danger"  *ngIf="loginfromsubmitted && this.bookADemoForm.controls.name.errors.required">
+            Please enter valid name
+          </small>
+        </div>
+        <div *ngIf="loginfromsubmitted && this.bookADemoForm.controls.name.errors?.minlength">
+          <small class="text-danger">Name must be at least 3 characters long.</small>
+        </div>
+      </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+        <input type="text" class="form-control" placeholder="Email*" name="email" formControlName="email" required/>
+        <div *ngIf="loginfromsubmitted && this.bookADemoForm.controls.email.errors">
+          <small  class="text-danger" *ngIf="loginfromsubmitted && this.bookADemoForm.controls.email.errors.required">
+            Please enter email id
+          </small>
+        </div>
+        <div *ngIf="(primEmail.invalid && primEmail.touched) || primEmail.dirty">
+          <small *ngIf="primEmail.errors?.pattern" class="text-danger">Please provide valid email address</small>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <input type="text" class="form-control" name="phone*" formControlName="phone" placeholder="Phone*"/>
+          <div *ngIf="loginfromsubmitted && this.bookADemoForm.controls.phone.errors">
+            <small class="text-danger"  *ngIf="loginfromsubmitted && this.bookADemoForm.controls.phone.errors.required">
+              Please enter valid phone number
+            </small>
+          </div>
+          <div *ngIf="loginfromsubmitted && this.bookADemoForm.controls.phone.errors?.minlength">
+            <small class="text-danger">Phone number must be at least 10 numbers long.</small>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <input type="text" class="form-control" name="prodCompany" formControlName="prodCompany" placeholder="Production Company*"/>
+          <div *ngIf="loginfromsubmitted && this.bookADemoForm.controls.prodCompany.errors">
+            <small class="text-danger"  *ngIf="loginfromsubmitted && this.bookADemoForm.controls.prodCompany.errors.required">
+              Please enter production company
+            </small>
+          </div>
+          <div *ngIf="loginfromsubmitted && this.bookADemoForm.controls.prodCompany.errors?.minlength">
+            <small class="text-danger">Production company must be at least 3 characters long.</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="form-group">
+          <input type="text" class="form-control" name="typeOfProd" formControlName="typeOfProd" placeholder="Type of Production*"/>
+          <div *ngIf="loginfromsubmitted && this.bookADemoForm.controls.typeOfProd.errors">
+            <small class="text-danger"  *ngIf="loginfromsubmitted && this.bookADemoForm.controls.typeOfProd.errors.required">
+              Please enter type of production
+            </small>
+          </div>
+          <div *ngIf="loginfromsubmitted && this.bookADemoForm.controls.typeOfProd.errors?.minlength">
+            <small class="text-danger">Type of production must be at least 3 characters long.</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="form-group">
+          <input type="text" class="form-control"  formControlName="discover" placeholder="How did you discover TrueBudget?*"/>
+          <div *ngIf="loginfromsubmitted && this.bookADemoForm.controls.discover.errors">
+            <small class="text-danger"  *ngIf="loginfromsubmitted && this.bookADemoForm.controls.discover.errors.required">
+              Please enter how did you discover TrueBudget?
+            </small>
+          </div>
+          <div *ngIf="loginfromsubmitted && this.bookADemoForm.controls.discover.errors?.minlength">
+            <small class="text-danger">Discover TrueBudget? field must be at least 3 characters long.</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="form-group">
+          <textarea name="comments" id="comments" type="text" class="form-control" formControlName="comments" placeholder="Additional Notes*" cols="30"  rows="4"></textarea>
+          <div *ngIf="loginfromsubmitted && this.bookADemoForm.controls.comments.errors">
+            <small class="text-danger"  *ngIf="loginfromsubmitted && this.bookADemoForm.controls.comments.errors.required">
+              Please enter additional notes
+            </small>
+          </div>
+          <div *ngIf="loginfromsubmitted && this.bookADemoForm.controls.comments.errors?.minlength">
+            <small class="text-danger">Additional notes field must be at least 3 characters long.</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="demobtns">
+      <a class="pull-left demoback" (click)="closeDemo()">
+        <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+      </a>
+      <button type="submit" class="pull-right demosend btn btn-md">{{submititle}}</button>
+    </p>
+    <div class="alert alert-success text-center" role="alert" *ngIf="successToast" >
+      Your message has been sent <i class="fa fa-check"></i>
+  </div>
+  </form>
+  
+
+  <div class="callus">
+    <p class="or text-center"><span> or </span></p>
+    <p class="col-md-11 call-us-number">Call Us: 818-562-7866</p>
+  </div>
+</div>

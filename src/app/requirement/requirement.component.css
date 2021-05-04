@@ -1,0 +1,22 @@
+.requirement-section {
+    margin-top: 8em;
+}
+.requirement-section h4{
+    font-weight: 900;
+    font-size: 28px;
+}
+.requirement-section p{
+    font-size: 18px;
+    line-height: 1.7rem;
+    margin-top: 3em;
+}
+.list-one {
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+.list-one li {
+    padding: 5px !important;
+    text-transform: none !important;
+    padding-bottom: 8px;
+    border: none !important;
+  }

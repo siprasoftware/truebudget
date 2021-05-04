@@ -1,0 +1,138 @@
+footer {
+  background: #1383c6;
+  color: white;
+}
+.license-section {
+  background: #e06730;
+}
+.home_footer {
+  background-color: #1383c6;
+  padding: 25px 0 15px;
+}
+.list-group i {
+  font-size: 20px;
+  margin: 15px 0px 0px 0px;
+}
+#verticle-line {
+  height: 22px;
+  width: 0px;
+  margin-left: 10px;
+  margin-right:10px;
+  border: 0.19px solid white;
+}
+.footer-right {
+  display: flex;
+}
+.footer-right ul{
+  display: flex;
+  list-style-type: none;
+  margin-top: -3px;
+}
+.footer-right ul li{
+  margin-right: 10px !important;
+}
+.footer-right ul li i{
+  font-size: 20px;
+}
+.copy-right {
+  margin: 0px;
+  padding-bottom: 15px;
+}
+.footer li{
+  background: none !important;
+  border: none !important;
+}
+
+.footer a {
+  color: white;
+}
+
+.footer h4 {
+  color: white;
+}
+
+.icons span {
+  font-size: 22px;
+  margin: 0 15px 0 0;
+}
+
+.icons {
+  padding: 10px 0 0 0;
+}
+
+.mt-40 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+}
+
+li {
+  text-align: left;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 25px;
+  cursor: pointer;
+  font-size: 14px !important;
+  white-space: nowrap;
+}
+
+li:focus {
+  outline: none;
+}
+
+h4 {
+  text-align: left;
+}
+.footer-software {
+  padding-left: 37px;
+}
+.footer-hereforyou {
+  padding-left: 28px;
+  word-break: break-word;
+}
+.footer-about {
+  padding-left: 47px;
+}
+.footer-find {
+  padding-left: 26px;
+}
+.footer-find a{
+  text-decoration: none;
+}
+.blog-anchor a:hover{
+  text-decoration: none;
+}
+@media (min-width: 768px) and (max-width: 889px) {
+  .footer-software {
+    padding-left: 0px;
+  }
+  .footer-hereforyou {
+    padding-left: 0px;
+  }
+  .footer-about {
+    padding-left: 0px;
+  }
+  .footer-find {
+    padding-left: 0px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .footer-software {
+    padding-left: 15px;
+  }
+  .footer-about {
+    padding-left: 15px;
+  }
+  .footer-hereforyou {
+    padding-left: 15px;
+  }
+  .footer-find {
+    padding-left: 15px;
+  }
+  .copy-right {
+    padding: 0 7px 15px 5px;
+  }
+}

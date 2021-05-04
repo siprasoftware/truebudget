@@ -1,0 +1,28 @@
+.border-0 {
+    border: none;
+}
+.support-blog h3{
+    font-weight: bolder;
+    font-size: 28px;
+}
+.support-blog p{
+    font-size: 18px;
+    line-height: 1.7;
+    color: rgb(0, 0, 0);
+    padding: 15px 0px;
+}
+.support-blog h5{
+    font-weight: bold;
+    line-height: 1.7;
+    font-size: 20px;
+}
+.support-blog ul li{
+    font-size: 18px;
+    line-height: 1.7;
+    color: rgb(0, 0, 0);
+    padding-top: 10px;
+}
+.support-blog a{
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+}

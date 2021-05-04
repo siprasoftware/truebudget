@@ -1,0 +1,56 @@
+<div id="mySidenav" class="sidenav font-family-menu">
+  <span class="closenav-btn">
+    <a href="javascript:void(0)" class="closebtn pull-left" (click)="closeNav()">&times;</a>
+  </span>
+  <div class="nav-menu">
+    <a (click)="noopacitybg('home')" class="dropdown-item" role="button">Home</a>
+    <a (click)="noopacitybg('feature')" class="dropdown-item" role="button">Features</a>
+    <a (click)="noopacitybg('learn')" class="dropdown-item" role="button">Learn</a>
+    <a (click)="noopacitybg('requirement')" class="dropdown-item" role="button">Requirements</a>
+    <a (click)="noopacitybg('faq')" class="dropdown-item" role="button">F.A.Q</a>
+    <a (click)="noopacitybg('updates')"  class="dropdown-item" role="button">Updates</a>
+    <a (click)="noopacitybg('support')" class="dropdown-item" role="button">Support</a>
+  </div>
+</div>
+<div class="backgrop" (click)="closeNav()" id="backdrop"></div>
+<div class="sticky-menu" [style.opacity]="stickymenuopacity" [class.sticky-menu-scroll]="scrollboolean"
+  [style.background]="bg" id="stickymenu">
+  <section class="inner_header">
+    <nav class="navbar">
+      <div class="container-fluid fluid-container">
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav hidden-md hidden-sm hidden-lg show-xs hideo">
+            <li>
+              <a routerLink="/" style="padding: 0px"><img src="../../assets/website/images/True-Budget-logo.png" alt="logo"
+                  class="img-responsive" />
+              </a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav hidden-xs hide-2">
+            <li>
+              <a routerLink="/" style="padding: 0px"><img src="../../assets/website/images/True-Budget-logo.png" alt="logo"
+                  class="img-responsive" />
+              </a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right hidden-sm hidden-xs hide-2 menu-anchor">
+            <li><a routerLink="/">Home</a></li>
+            <li><a routerLink="/feature">Features</a></li>
+            <li><a routerLink="/learn">Learn</a></li>
+            <li><a routerLink="/requirement">Requirements</a></li>
+            <li><a routerLink="/faq">F.A.Q</a></li>
+            <li><a routerLink="/updates">Updates</a></li>
+            <li><a routerLink="/support">Support</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right hidden-md show-sm hidden-lg show-xs hide-3">
+            <li>
+              <a (click)="openNav()"><i class="fa fa-bars" style="font-size: 2em !important"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+</div>
+
+

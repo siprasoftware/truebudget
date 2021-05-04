@@ -1,0 +1,243 @@
+.covid_wrap a {
+  background: none;
+}
+.covid_wrap ul li a:hover {
+  background: none;
+}
+.inner_header ul li a:focus{
+  background: none !important;
+  color: orange;
+}
+.covid-text {
+  margin: 5px 0 0 0 !important;
+}
+.navbar-nav {
+  margin: 0;
+}
+.menu-anchor a{
+  font-size: 14px;
+}
+.sticky-menu {
+  position: fixed;
+  top: 0px;
+  height: 80px;
+  width: 100%;
+  z-index: 99;
+  background-color: #fff;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  padding: 8px 0px;
+}
+.navbar-collapse.collapse {
+  padding: 0;
+}
+.inner_header ul li {
+  margin-top: 8px;
+}
+.inner_header ul li a {
+  color: #000;
+}
+.inner_header ul li a:hover {
+  background: none;
+  color: orange;
+}
+.inner_header .fa-search,
+.fa-bars {
+  color: orange;
+  font-size: 18px;
+}
+
+.menu-list ul .menulist-searchicon {
+  padding: 0 0px 0 0;
+}
+.menulist-searchicon p span img {
+  position: relative;
+  top: 5px;
+  padding: 0 0 0 6px;
+}
+.menu-list ul li p {
+  margin: 14px 0 0 0;
+}
+.menu-list ul {
+  list-style: none;
+  color: #000;
+  display: inline-block;
+  text-align: right;
+  padding: 0;
+  margin: 5px 0 0 0;
+}
+
+.menu-list ul li {
+  display: inline-block;
+  padding: 0 8px 0 3px;
+}
+
+li {
+  cursor: pointer;
+}
+
+.sticky-menu-scroll .menu-list {
+  margin: 20px 0 0 0;
+}
+
+.sticky-menu-scroll {
+  height: 60px;
+}
+
+.sticky-menu-scroll .menu .open-menu-button {
+  top: 18px;
+}
+.login-btns a {
+  border: 1px solid #fff;
+  padding: 5px 21px;
+  border-radius: 3px;
+  font-size: 13px;
+  margin-top: 9px;
+  margin-right: 7px;
+}
+@media (min-width: 0px) and (max-width: 997px) {
+  .tab-display-none {
+    display: none !important;
+  }
+  .tab-display-show {
+    display: block !important;
+    float: right;
+  }
+}
+@media (min-width: 320px) and (max-width: 375px) {
+  .menu .open-menu-button {
+    margin: 25px 0 0 0;
+  }
+}
+@media (min-width: 376px) and (max-width: 767px) {
+  .menu .open-menu-button {
+    margin: 24px 0 0 0;
+  }
+  .headerimage a img {
+    margin: 10px 0 0 11px;
+    width: 85%;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1300px) {
+  .menu-list ul {
+    font-size: 8px;
+  }
+  .header_loginbtns {
+    margin: 0 0 0 5px;
+  }
+}
+@media (max-width: 425px) and (min-width: 320px) {
+  .header_loginbtns {
+    display: none !important;
+  }
+  .login-select {
+    padding: 5px 2px;
+    border-radius: 5px;
+    background: #93908f;
+    color: #fff;
+    border: 1px solid #fff;
+    width: 80% !important;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .menu-list ul {
+    display: flex !important;
+    padding-right: 10px !important;
+  }
+  .menu .open-menu-button {
+    width: 10px !important;
+  }
+  .menu .open-menu-button span {
+    width: 30px !important;
+    margin-right: 10px !important;
+  }
+  .header_loginbtns {
+    display: none !important;
+  }
+  .login-select {
+    padding: 5px 2px;
+    border-radius: 5px;
+    background: #93908f;
+    color: #fff;
+    border: 1px solid #fff;
+    width: 65%;
+    margin: 14px 0 0 !important;
+  }
+  .collapse {
+    display: block;
+  }
+  .navbar-nav {
+    float: left;
+  }
+  .navbar-right {
+    float: right;
+  }
+}
+@media (min-width: 767px) and (max-width: 767.99px){
+  .collapse {
+    display: flex !important;
+}
+.hideo{
+  display: block !important;
+}
+.hide-2{
+  display: none !important;
+}
+.hide-3{
+  position: absolute;
+  right: 20px;
+}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .menu .open-menu-button {
+    margin-top: 24px !important;
+  }
+  .inner_header ul li a {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  /* .inner_header img {
+    width: 120px;
+    margin-top: 12px;
+  } */
+  .inner_header .fa-search,
+  .fa-bars {
+    font-size: 15px;
+  }
+  .header_loginbtns {
+    margin: 19px 0 0 9px;
+    float: right;
+  }
+  .sec {
+    margin-right: 40px;
+  }
+  .menu .open-menu-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .fluid-container {
+    width: 100%;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1199px) {
+  .inner_header ul li a {
+    padding-left: 5px;
+  }
+}
+@media (min-width: 1600px) {
+  .menu-list ul li {
+    padding: 0px;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1350px) {
+  .menu-list ul li {
+    font-size: 12px !important;
+  }
+}
+@media (min-width: 1350px) and (max-width: 1600px) {
+  .menu-list ul li {
+    font-size: 12px !important;
+  }
+}

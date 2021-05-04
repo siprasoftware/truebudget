@@ -1,0 +1,20 @@
+.learn-section a{
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+}
+.learn-section h3{
+    font-weight: 900;
+    margin-top: 40px;
+    line-height: 1.7;
+}
+.learn-section p{
+    font-size: 18px;
+    line-height: 1.7rem;
+    color: rgb(0, 0, 0);
+    margin-top: -10px;
+}
+.learn-section iframe {
+    height: 20em;
+    margin: 27px 0px;
+    border: none;
+}

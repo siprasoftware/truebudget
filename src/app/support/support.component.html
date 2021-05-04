@@ -1,0 +1,65 @@
+<div class="container support-blog mt-3">
+  <div class="row">
+    <div class="col-md-12">
+        <h2 class="const-blue text-uppercasem text-center"><b>SUPPORT</b></h2>
+        <p style="padding: 20px 20px 0px 20px;">If you experience a problem using TrueBudget, please follow these steps.</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="list-group">
+            <div class="list-group-item border-0">
+              <h3 class="const-heading">STEP 1 - Make sure you are running the most recent version of TrueBudget.</h3>
+              <p>Go to the Home page of this site and scroll down to the DOWNLOAD button.  Just above it, it will list the currently available version.  If you are running a previous version, please download the latest one.  (To see what version of TrueBudget you have, click on the Menu page (previously called the Start Page) and look directly under the TrueBudget logo.)  It's possible we have fixed the issue you are experiencing in the latest version.</p>
+            </div>
+            <div class="list-group-item border-0">
+              <h3 class="const-heading">STEP 2 - Make sure your version of Excel is up to date.</h3>
+              <p>TrueBudget has only been tested on recent updates of Excel.  See the Requirements page to see the minimum version of Excel you need to have for your particular system.</p>
+              <p>Even if you have one of the listed versions, Microsoft periodically fixes bugs in Excel, so it is best to be running the most recent version.</p>
+              <p>To update Excel, do the following.</p>
+              <p>Mac: Click on <b>Help > Check for Updates.*</b></p>
+              <p>Windows: Click on <b>File > Account > Update Options > Update Now</b></p>
+              <p>Once you have updated your Excel, open TrueBudget again to see if your issue is still occurring.</p>
+              <p><u>*Notes about updating on Mac:</u></p>
+              <p>For Excel 2011, using the above method to update may not work.  If it doesn’t, you should be able to download the latest update directly from the Microsoft website by <a href="https://www.microsoft.com/en-us/download/details.aspx?id=55942" target="_blank" class="text-secondary">clicking here</a>.</p>
+              <p>For Excel 2016, using the above method to update may not work.  If it doesn’t, you may need to first download the Microsoft AutoUpdate Tool.  You should be able to download that by <a href="https://go.microsoft.com/fwlink/?linkid=830196" target="_blank">clicking here</a>.</p>
+              <p>If you originally downloaded Excel from the Mac App Store and you do not have automatic update turned on, you can attempt to do an update this way:</p>
+              <ul>
+                <li>Open the <b>Mac App Store</b> from your <b>Dock</b> or <b>Finder</b>. </li>
+                <li>Click <b>Updates</b> on the left side menu, then click <b>Update All</b> or the <b>Update</b> button next to the Excel icon.</li>
+              </ul>
+            </div>
+            <div class="list-group-item border-0">
+              <h3 class="const-heading">STEP 3 - Read about the Known Issues.​</h3>
+              <p>Once you have confirmed that you have installed the latest update for Excel, look at the below list of Known Issues.</p>
+              <h5 class="const-heading">ISSUE: You receive an error that says "Excel cannot open the file 'true_budget-v1.1.xlsb.xlsx' because the file format or file extension is not valid."</h5>
+              <p>ANSWER: Some browsers and/or anti-virus software seem to be adding an extra file extension to the file when downloading it.  Remove '.xlsx' from the end of the file name and it should then open properly.</p>
+              <h5 class="const-heading">ISSUE: You receive a message saying the cell or chart you are trying to change is on a protected sheet.</h5>
+              <p>EXCEL VERSIONS AFFECTED: All</p>
+              <p>ANSWER: This is normal behavior for TrueBudget.  All sheets are protected because there are formulas in certain cells that we do not want you to accidentally delete, and there are also hidden columns on some of the sheets that we want to remain hidden.</p>
+              <p>There is a way to unprotect certain cells on a sheet, and to also change the formatting on all cells on that sheet.  To do this, go into the main Options menu, then click the Protection tab.  Uncheck the box next to the sheet you want to affect.  This will technically not unprotect the sheet, but it will allow you to type into certain cells that you were not able to before, as well as change formatting in all the cells on that sheet.</p>
+              <p>Lastly, it is possible that on the Purchase Order Log or Petty Cash Log, certain cells within the log will become locked when they should not be.  If this happens, click the Repair Log button on the sheet, and it should fix the problem.</p>
+              <h5 class="const-heading">ISSUE: The TrueBudget ribbon tab does not appear for you.</h5>
+              <p>EXCEL VERSIONS AFFECTED: All versions for Mac</p>
+              <p>ANSWER: On Excel 2011 for Mac, it will never appear because this version of Excel does not allow for custom ribbon tabs.  However, all of the buttons that appear on the ribbon tab also appear on the Menu page.  On Excel 2016/2019/365 for Mac, sometimes the ribbon tab does not appear when you first open TrueBudget.  It does eventually appear, but can take a minute or two.  We are unsure why this sometimes happens.</p>
+              <h5 class="const-heading">ISSUE: When attempting to create a PDF file in TrueBudget, you receive a Run-time 1004 error.</h5>
+              <p>EXCEL VERSIONS AFFECTED: Excel 2011 for Mac</p>
+              <p>ANSWER: This is caused by pressing File -> Print (or Cmd-P) while in Excel.  If you do this, Excel will cause this error when you try to create a PDF file in TrueBudget.  The work-around for this is to close Excel completely, re-open your TrueBudget file, and try again.</p>
+              <h5 class="const-heading">ISSUE: When you close TrueBudget, you are asked for a password.</h5>
+              <p>EXCEL VERSIONS AFFECTED: Excel for Windows</p>
+              <p>ANSWER: You will need to click Cancel multiple times until the prompt goes away.  Unfortunately, there are various reasons why this can happen, so the exact cause can be hard to determine.  If you use Dropbox, go into the Preferences and set the Dropbox Badge to "Never show".  If that does not resolve it, try closing Dropbox altogether.  The problem can also be caused by an Excel Add-in.  Try disabling any Excel Add-ins you have installed.  If you are still experiencing the issue after trying these options, feel free to contact us.</p>
+            </div>
+            <div class="list-group-item border-0">
+                <h3 class="const-heading">STEP 4 - Contact us.</h3>
+                <p style="padding-bottom: 0px;">If you still need help after reviewing the above steps, please email us at support@truebudget.net.  We will endeavor to get back to you as quickly as possible.  When you email us, be sure to include the following:</p>
+            </div>
+              <ul style="margin-top: -15px;">
+                <li>the specific operating system you are running (Catalina, Windows 10, etc.)</li>
+                <li>the version of Excel you are running, including the number (16.40, 14.7.7, etc.)</li>
+                <li>a detailed description of what you were doing when the problem occurred</li>
+                <li>if you are receiving an error message, please take a screenshot or photo of it</li>
+              </ul>
+          </div>
+    </div>
+</div>
+</div>

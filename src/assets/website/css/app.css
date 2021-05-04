@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+
+
+#splashscreen #status,
+.center,
+.item,
+.page-not-found .page-body,
+.page-not-found header,
+.product-title,
+a.btn-animate {
+    text-align: center
+}
+
+#mySVG * {
+    fill-opacity: 0;
+    transition: fill-opacity 1s
+}
+
+#mySVG.finished * {
+    fill-opacity: 1
+}
+
+@-webkit-keyframes rotate {
+    0% {
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg)
+    }
+    83% {
+        2.4 / 2.9=0.827 -webkit-transform: rotate(315deg);
+        transform: rotate(315deg)
+    }
+    100% {
+        -webkit-transform: rotate(315deg);
+        transform: rotate(315deg)
+    }
+}
+
+
+#curtain,
+#curtain.start {
+    opacity: 0;
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    left: 0
+}
+
+#curtain {
+    opacity: 1;
+    width: 100%;
+    height: 100vh
+}
+
+.door-left,
+.door-right,
+.video-overlay,
+.video-overlay-dark {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: 0
+}
+
+.door-left,
+.door-right {
+    transform: skew(45deg);
+    transition: all ease-in 1s;
+    -moz-transition: all ease-in 1s;
+    -webkit-transition: all ease-in 1s;
+    -o-transition: all ease-in 1s;
+    -ms-transition: all ease-in 1
+}
+
+#curtain.start .door-left {
+    left: -150%
+}
+
+#curtain.start .door-right {
+    left: 200%
+}
+
+#curtain .door-left {
+    left: -49%;
+    background: #1a84c6
+}
+
+#curtain .door-right {
+    left: 49%;
+    background: #E06730
+}
+
+#splashscreen.start {
+    background: #fff
+}
+
+#splashscreen.end {
+    background: #000
+}
+
+
+
+
+#splashscreen {
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #fff;
+    transition: 1s .4s
+}
+
+#splashscreen #progress {
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    width: 0;
+    top: 50%;
+    transition: 1s
+}
+
+#splashscreen #status {
+    font-size: .7em;
+    letter-spacing: 3px;
+    position: absolute;
+    top: 50%;
+    margin-top: -40px;
+    width: 100%;
+    color: #fff
+}
+
+.state_tax{
+    margin-bottom: 0 !important;
+  }
+.statewithholdingfrom{
+    font-family: 'Avenir';
+    font-size: 18px;
+}
+.statewithholdingfrom h3{
+    margin:0;padding: 20px 0 0 0;
+}

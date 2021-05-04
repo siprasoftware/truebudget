@@ -1,0 +1,252 @@
+<section class="entertainment_section">
+  <div class="container-fluid banner_background">
+    <div>
+      <div>
+        <div>
+          <div class="banner-content">
+            <div>
+              <h3>Welcome to</h3>
+              <h1>TrueBudget</h1>
+              <hr style="width: 25%;margin: 0;border-color: rgb(114, 176, 218);">
+              <p>
+                TrueBudget provides a beautiful and easy-to-use budgeting platform for “short-form” productions such as commercials, music videos, promos, and more.  Try TrueBudget today and increase productivity for your entire team.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
+        <div class="home_arrow">
+          <p class="d-flex">
+            <a href="#services"><img src="../../assets/website/images/home-scroll-icon.png" class="img-responsive" /></a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="home_services" id="services">
+  <div class="container services">
+    <div class="row equal-column">
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 services_inner" style="padding: 0 0 20px 0" data-aos="fade-zoom-in">
+        <div class="d-margin">
+          <img src="../../assets/website/images/TrueBudget/budget.png" alt="" class="img-responsive">
+        </div>
+        <div class="inner_border">
+          <h3 class="large-font-h4">BUDGET</h3>
+          <P class="large-font-p services_p">Create a budget for your project using the industry standard AICP format.
+          </P>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 services_inner" style="padding: 0 0 20px 0">
+        <div class="d-margin">
+          <img src="../../assets/website/images/TrueBudget/Actualize.png" alt="" class="img-responsive">
+        </div>
+        <div class="inner_border">
+          <h3 class="large-font-h4">ACTUALIZE</h3>
+          <P class="large-font-p services_p">Easily track production costs using simple logs.
+          </P>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 services_inner" style="padding: 0 0 0 20px 0">
+        <div class="d-margin">
+          <img src="../../assets/website/images/TrueBudget/Customize.png" alt="" class="img-responsive">
+        </div>
+        <div class="inner_border">
+          <h3 class="large-font-h4">CUSTOMIZE</h3>
+          <P class="large-font-p services_p">Design and customize settings to your desired workflow.
+          </P>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 services_inner" style="padding: 0 0">
+        <div class="d-margin">
+          <img src="../../assets/website/images/TrueBudget/import.png" alt="" class="img-responsive">
+        </div>
+        <div class="inner_border">
+          <h3 class="large-font-h4">IMPORT/EXPORT</h3>
+          <P class="large-font-p services_p">Import your existing budgets from HotBudget or Point Zero and export logs as separate files.
+          </P>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 services_inner" style="padding: 0 0">
+        <div class="d-margin">
+          <img src="../../assets/website/images/TrueBudget/organize.png" alt="" class="img-responsive">
+        </div>
+        <div class="inner_border">
+          <h3 class="large-font-h4">ORGANIZE</h3>
+          <P class="large-font-p services_p">No need for separate documents for your Purchase Orders and Petty Cash Envelope cover sheets.
+          </P>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 services_inner" style="padding: 0 0">
+        <div class="d-margin">
+          <img src="../../assets/website/images/TrueBudget/design.png" alt="" class="img-responsive">
+        </div>
+        <div class="inner_border">
+          <h3 class="large-font-h4">DESIGN</h3>
+          <P class="large-font-p services_p">Create your Purchase Order template just the way you like it.
+          </P>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="version-section homerequest_demo">
+  <h3 data-aos="zoom-in">DOWNLOAD</h3>
+  <p><img src="../../assets/website/images/home-line.jpg" /></p>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+        <div class="homedownload_form">
+            <h5 class="mb-2">Complete the form below to obtain your free license of TrueBudget for a limited time.  No commitment to purchase required while promotion lasts.</h5>
+            <div>
+              <form [formGroup]="downloadForm" (ngSubmit)="onDownload()" novalidate>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input type="text" class="form-control" formControlName="first_name" placeholder="Enter First Name*" />
+                      <div *ngIf="loginfromsubmittedthree && this.downloadForm.controls.first_name.errors">
+                        <small class="text-danger" *ngIf="loginfromsubmittedthree && this.downloadForm.controls.first_name.errors.required">
+                          Please enter valid first name
+                        </small>
+                      </div>
+                      <div *ngIf="loginfromsubmittedthree && this.downloadForm.controls.first_name.errors?.minlength">
+                        <small class="text-danger">First Name must be at least 3 characters long.</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input type="text" class="form-control" formControlName="last_name" placeholder="Enter Last Name*" />
+                      <div *ngIf="loginfromsubmittedthree && this.downloadForm.controls.last_name.errors">
+                        <small class="text-danger" *ngIf="loginfromsubmittedthree && this.downloadForm.controls.last_name.errors.required">
+                          Please enter valid last name
+                        </small>
+                      </div>
+                      <div *ngIf="loginfromsubmittedthree && this.downloadForm.controls.last_name.errors?.minlength">
+                        <small class="text-danger">Last Name must be at least 3 characters long.</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input type="text" placeholder="Enter Phone" class="form-control" formControlName="mobile_number" />
+                      <div *ngIf="loginfromsubmittedthree && this.downloadForm.controls.mobile_number.errors?.minlength">
+                        <small class="text-danger">Phone number must be at least 10 numbers long.</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input type="email" [class.is-invalid]="primEmailone.invalid && primEmailone.touched" name="email_id"
+                        class="form-control" placeholder="Enter Email*" formControlName="email_id" />
+                      <div *ngIf="loginfromsubmittedthree && this.downloadForm.controls.email_id.errors">
+                        <small class="text-danger" *ngIf="loginfromsubmittedthree && this.downloadForm.controls.email_id.errors.required">
+                          Please enter email id
+                        </small>
+                      </div>
+                      <div *ngIf="(primEmailone.invalid && primEmailone.touched) || primEmailone.dirty">
+                        <small *ngIf="primEmailone.errors?.pattern" class="text-danger">Please provide valid email address</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input placeholder="How did you hear about TrueBudget?*" type="text" class="form-control" name="howdiscover"
+                        formControlName="discover" />
+                      <div *ngIf="loginfromsubmittedthree && this.downloadForm.controls.discover.errors">
+                        <small class="text-danger"
+                          *ngIf="loginfromsubmittedthree && this.downloadForm.controls.discover.errors.required">
+                          Please enter how did you hear about TrueBudget?
+                        </small>
+                      </div>
+                      <div *ngIf="loginfromsubmittedthree && this.downloadForm.controls.discover.errors?.minlength">
+                        <small class="text-danger">Discover TrueBudget? field must be at least 3 characters long.</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <select name="Type of production" class="form-control" formControlName="typeofproduction">
+                        <option [ngValue]="null" disabled>Select Type of Production*</option>
+                        <option value="Commercial">Commercial</option>
+                        <option value="Music">Music</option>
+                        <option value="Video">Video</option>
+                        <option value="etc">etc</option>
+                      </select>
+                      <div *ngIf="loginfromsubmittedthree && this.downloadForm.controls.typeofproduction.errors">
+                        <small class="text-danger"
+                          *ngIf="loginfromsubmittedthree && this.downloadForm.controls.typeofproduction.errors.required">
+                          Please select type of production
+                        </small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                  
+                <div class="download-modal-footer">
+                  <button class="btn btn-orange" type="submit">{{sendtitle}}</button>
+                </div>
+              </form>
+            </div>
+        </div>
+       </div>
+       <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+        <div class="alert alert-success text-center" role="alert" *ngIf="successDownloadToast">
+          Congratulations! Please check your email for the document.<i class="fa fa-check"></i>
+        </div>
+        <div class="alert alert-danger text-center" role="alert" *ngIf="displayDownloaderrormessage" style="margin-top: 3em">
+          {{ downloadErrormessage }}
+        </div>
+       </div>
+       
+    </div>
+  </div>
+</section>
+
+<div class="text-center video">
+  <ng-template #template class="col-lg-12 col-md-12 col-sm-12 col-xs-12 search_popup">
+    <div class="modal-body col-lg-12 col-sm-12 col-md-12 col-xs-12">
+      <p class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+        <button type="button " class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </p>
+      <p class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+        START TYPING AND PRESS ENTER TO SEARCH
+      </p>
+      <form>
+        <input type="text" #box (keyup.enter)="onEnter(box.value)" placeholder="" />
+        <p class="col-lg-12 col-sm-12 col-md-12 col-xs-12" [style.display]="searchNoMatch">
+          No matches found for &ldquo;{{ box.value }}&rdquo;
+        </p>
+        <datalist id="browsers" style="display: none">
+          <option *ngFor="let item of key" value="{{ item.keyword }}"></option>
+        </datalist>
+
+        <i></i>
+      </form>
+    </div>
+  </ng-template>
+
+  <ng-template #video class="video" style="width: 100%; margin: 0">
+    <div class="modal-body text-center" style="padding: 0; width: 100%">
+      <p class="pull-right popupvideoclose col-md-12">
+        <button type="button" class="closevideo pull-right" aria-label="Close" (click)="closeFullvideo()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </p>
+      <video class="popup_video" width="800" height="auto" controls autoplay style="position: relative">
+        <source src="../../assets/website/video/RES.mp4" type="video/mp4" />
+        <source src="movie.ogg" type="video/ogg" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </ng-template>
+</div>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>

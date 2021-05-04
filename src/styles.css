@@ -1,0 +1,1606 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script");
+@font-face {
+  font-family: "futurabold";
+  src: url("./assets/fonts/webfontkit-futurabold/futura_extra_bold-webfont.woff2")
+      format("woff2"),
+    url("./assets/fonts/webfontkit-futurabold/futura_extra_bold-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url("./assets/fonts/Avenir/avenir-light-webfont.woff2") format("woff2"),
+    url("./assets/fonts/Avenir/avenir-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FontAwesome";
+  src: url("./assets/fonts/fontawesome/fontawesome-webfont.woff2")
+      format("woff2"),
+    url("./assets/fonts/fontawesome/fontawesome-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "futura_md_btmedium_italic";
+  src: url("./assets/fonts/webfontkit-futura_md_light_italica/futura_medium_italic_font-webfont.woff2")
+      format("woff2"),
+    url("./assets/fonts/webfontkit-futura_md_light_italica/futura_medium_italic_font-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "futura_xblk_btextra_black";
+  src: url("./assets/fonts/future/futura_extra_black_font-webfont.woff2")
+      format("woff2"),
+    url("./assets/fonts/future/futura_extra_black_font-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "neuroticanormal";
+  src: url("./assets/fonts/neurotica-webfont.woff2") format("woff2"),
+    url("./assets/fonts/neurotica-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Beyond-The-Mountains";
+  src: url("./assets/fonts/webfonts_Beyond-The-Mountains/Beyond-The-Mountains.ttf.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat-Ultra-Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Montserrat Ultra Light"),
+    url("./assets/fonts/montserratultra/Montserrat-UltraLight.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "AbsolutProCond-Light";
+  src: url("./assets/fonts/absoluteprocons/AbsolutProCond-Light.ttf.woff")
+      format("woff"),
+    url("./assets/fonts/absoluteprocons/AbsolutProCond-Light.ttf.svg#AbsolutProCond-Light")
+      format("svg"),
+    url("./assets/fonts/absoluteprocons/AbsolutProCond-Light.ttf.eot"),
+    url("./assets/fonts/absoluteprocons/AbsolutProCond-Light.ttf.eot?#iefix")
+      format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AbsolutProCond-Light";
+  src: url("./assets/fonts/absoluteprocons/AbsolutProCond-Light.ttf.woff")
+      format("woff"),
+    url("./assets/fonts/absoluteprocons/AbsolutProCond-Light.ttf.svg#AbsolutProCond-Light")
+      format("svg"),
+    url("./assets/fonts/absoluteprocons/AbsolutProCond-Light.ttf.eot"),
+    url("./assets/fonts/absoluteprocons/AbsolutProCond-Light.ttf.eot?#iefix")
+      format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AbsolutProCond-Bold";
+  src: url("./assets/fonts/absoluteproconsbold/AbsolutProCond-Bold.ttf.woff")
+      format("woff"),
+    url("./assets/fonts/absoluteproconsbold/AbsolutProCond-Bold.ttf.svg#AbsolutProCond-Bold")
+      format("svg"),
+    url("./assets/fonts/absoluteproconsbold/AbsolutProCond-Bold.ttf.eot"),
+    url("./assets/fonts/absoluteproconsbold/AbsolutProCond-Bold.ttf.eot?#iefix")
+      format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "hair";
+  src: url(./assets/fonts/Montserrat-Hairline.eot);
+}
+@font-face {
+  font-family: "hair";
+  src: url(./assets/fonts/Montserrat-Hairline.ttf);
+}
+@font-face {
+  font-family: "mont";
+  src: url(./assets/fonts/Montserrat-Regular.eot);
+}
+@font-face {
+  font-family: "mont";
+  src: url(./assets/fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: "poor_richardregular";
+  src: url("./assets/fonts/poorich-webfont.woff2") format("woff2"),
+    url("./assets/fonts/poorich-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.font-family-menu {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+html,
+body {
+  width: 100%;
+  height: 100% !important;
+  /* background: #000; */
+}
+.container {
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h6 {
+  line-height: normal;
+  overflow-x: hidden;
+  font-family: "Avenir";
+  color: #000;
+}
+h1 {
+  font-size: 80px;
+  text-align: center;
+  color: #000;
+}
+h2 {
+  font-size: 80px;
+}
+span,
+p, .form-group {
+  line-height: normal;
+  font-family: "Avenir";
+}
+
+h5.AbsolutProCond-Light {
+  font-family: "AbsolutProCond-Light";
+  text-align: left;
+  font-size: 50px;
+}
+
+.m0 {
+  margin: 0px;
+}
+.p0 {
+  padding: 0px;
+}
+.mt20 {
+  margin-top: 20px;
+}
+.mt40 {
+  margin-top: 40px;
+}
+.mt50 {
+  margin-top: 50px;
+}
+.mt60 {
+  margin-top: 60px;
+}
+.mt65 {
+  margin-top: 65px;
+}
+.mt80 {
+  margin-top: 80px;
+}
+
+.mr0 {
+  margin-right: 0px;
+}
+.mr15 {
+  margin: 0px 15px 0px 15px;
+}
+.mb10 {
+  margin-bottom: 10px;
+}
+.mb20 {
+  margin-bottom: 20px;
+}
+.mb30 {
+  margin-bottom: 30px;
+}
+.mb33 {
+  margin-bottom: 33px;
+}
+.mb40 {
+  margin-bottom: 40px;
+}
+.mb50 {
+  margin-bottom: 50px;
+}
+.mb60 {
+  margin-bottom: 60px;
+}
+
+.ml0 {
+  margin-left: 0px;
+}
+.ml375 {
+  margin-left: 375px;
+}
+.pdt25 {
+  padding: 25px 0 0 0;
+}
+.pd0 {
+  padding: 0px 0px 0px 0px;
+}
+.pdl185 {
+  padding: 0 0 0 105px;
+}
+.pdt50 {
+  padding-top: 50px;
+}
+.pdt25 {
+  padding-bottom: 25px;
+}
+.pl75 {
+  padding-left: 75px;
+}
+.pd30 {
+  padding-bottom: 30px;
+}
+.wd65 {
+  width: 65%;
+}
+.overflow {
+  overflow: hidden;
+}
+.font25 {
+  font-size: 22px;
+}
+.pageloader {
+  max-width: 200px;
+  max-height: 500px;
+  position: relative;
+  top: 100px;
+  left: 100px;
+}
+
+/* toggle navigation  */
+
+/*   */
+
+#particles-js {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+}
+/* #particles-js {width: 100%; height: 100%; background:url("assets/images/bg-cover1.jpg") no-repeat center top} */
+.main-content #particles-js {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+#particles-js canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}
+.main-content #particles-js canvas {
+  z-index: -1;
+}
+.page-landing {
+  padding: 21% 0 0 0;
+  overflow: hidden;
+}
+.page-landing h1 {
+  z-index: 1;
+  position: relative;
+  font-family: "poor_richardregular";
+  font-style: italic;
+  color: #fff;
+  margin: 0 0 50px 0;
+  font-size: 60px;
+}
+.page-landing .animated-button {
+  z-index: 1;
+  position: relative;
+  display: inline-block;
+  position: relative;
+  background: none;
+  font-weight: normal;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 20px 30px;
+}
+
+.mdR0 {
+  margin-right: 0;
+}
+.main-content {
+  height: 93%;
+  width: 100%;
+}
+.page-main {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.ravi {
+  transform: matrix(1.3, 0, 0, 1.3, 0, 0);
+  transition: all 0.8s ease-in-out;
+  margin-top: -50px;
+  overflow: hidden;
+}
+.main_menu {
+  width: 100%;
+  height: 100%;
+}
+.menu-item {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  background: #fbfbfb;
+  overflow: hidden;
+  box-shadow: 0 0 0 #000;
+  -webkit-perspective: 500px;
+  perspective: 500px;
+  -webkit-perspective-origin: 50%;
+  perspective-origin: 50%;
+  transition: all 0.3s ease-in-out;
+}
+.menu-item:hover .menu-item-background {
+  -webkit-animation-fill-mode: none;
+  animation-fill-mode: none;
+  text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+    -1px 1px 0 #000, 1px 1px 0 #000;
+  -webkit-animation: zoomin 2s 1;
+}
+.about-menu:hover .menu-item-background {
+  -webkit-animation-fill-mode: none;
+  animation-fill-mode: none;
+  text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+    -1px 1px 0 #000, 1px 1px 0 #000;
+  -webkit-animation: zoomin 2s 1;
+}
+.menu-item.active:hover .menu-item-background {
+  -webkit-animation: none;
+}
+
+.menu-item.active .menu-item-title-container {
+  display: block;
+}
+
+.menu-item-background {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: opacity 0.3s linear;
+  transition: opacity 0.3s linear;
+}
+.menu-item-current-background,
+.menu-item-background {
+  position: absolute;
+  background-size: cover;
+  background-position: 100%;
+  z-index: 999;
+}
+.menu-item-current-background {
+  opacity: 0;
+}
+.menu-item-title-container {
+  background-color: rgb(22, 22, 22, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.menu-item-title {
+  display: block;
+  text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+    -1px 1px 0 #000, 1px 1px 0 #000;
+  font-family: "Avenir" !important;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  font-family: freight;
+  font-weight: 400;
+  font-size: 25px;
+  color: #ffffff;
+  opacity: 1;
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+  transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+  white-space: nowrap;
+  z-index: 9999;
+}
+.menu-item-title-container span {
+  transition: all 2s linear;
+  top: 35%;
+  position: relative;
+}
+.menu-item-title-container:hover .menu-item-title {
+  display: block;
+}
+/* .menu-item-title-container:hover{background: transparent;} */
+.menu-item-title-container:hover span {
+  display: block;
+}
+.grayscale {
+  opacity: 0.6;
+}
+.about-menu .menu-item-title-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.about-menu .menu-item-title {
+  font-family: "poor_richardregular";
+  position: static;
+  margin: 60px 0 0 0;
+  font-weight: 400;
+  font-size: 25px;
+  color: #fbfbfb;
+  transform: translateX(0) translateY(0%) rotate(0deg);
+  text-align: center;
+  white-space: nowrap;
+  opacity: 0.8;
+  font-style: italic;
+}
+.about-menu .menu-item-title-container:hover .menu-item-title {
+  position: static;
+}
+
+.home-contactus h4 a {
+  text-decoration: none;
+}
+
+.main-menu-heading .services {
+  margin-left: 0px;
+  margin-right: 12px;
+  padding: 3px 0;
+  font-family: "poor_richardregular";
+  text-align: center;
+  color: #fff;
+  font-size: 25px;
+  background: rgba(26, 132, 198, 1);
+  background: -webkit-gradient(
+    left top,
+    right top,
+    color-stop(0%, rgba(26, 132, 198, 1)),
+    color-stop(100%, rgba(0, 2, 6, 1))
+  );
+  background: linear-gradient(
+    to right,
+    rgba(26, 132, 198, 1) 0%,
+    rgba(0, 2, 6, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a84c6', endColorstr='#000206', GradientType=1 );
+  width: 81%;
+  display: inline-block;
+  font-style: italic;
+}
+.main-menu-heading .products {
+  margin-left: 10px;
+  padding: 3px 0;
+  text-align: center;
+  font-size: 25px;
+  font-family: "poor_richardregular";
+  color: #fff;
+  background: rgba(191, 98, 57, 1);
+  background: -moz-linear-gradient(
+    left,
+    rgba(191, 98, 57, 1) 0%,
+    rgba(29, 17, 14, 1) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    right top,
+    color-stop(0%, rgba(191, 98, 57, 1)),
+    color-stop(100%, rgba(29, 17, 14, 1))
+  );
+  background: -webkit-linear-gradient(
+    left,
+    rgba(191, 98, 57, 1) 0%,
+    rgba(29, 17, 14, 1) 100%
+  );
+  background: -o-linear-gradient(
+    left,
+    rgba(191, 98, 57, 1) 0%,
+    rgba(29, 17, 14, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    left,
+    rgba(191, 98, 57, 1) 0%,
+    rgba(29, 17, 14, 1) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(191, 98, 57, 1) 0%,
+    rgba(29, 17, 14, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf6239', endColorstr='#1d110e', GradientType=1 );
+  width: 17%;
+  display: inline-block;
+  font-style: italic;
+}
+.main-menu-heading {
+  margin-bottom: 30px;
+}
+.about-menu {
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 147px;
+  transition: width 1s;
+}
+.about-container .logo-big {
+  position: absolute;
+  left: 17px;
+  top: 35px;
+  width: 300px;
+}
+.about-container:hover .about-menu {
+  width: 60%;
+  transition: width 1s;
+}
+.aboutuscontent1 h2 {
+  text-align: center;
+  font-size: 50px;
+  color: #000;
+  padding: 50px 0px 50px 0px;
+}
+.aboutuscontent1 p {
+  text-align: center;
+}
+.aboutuscontent1 {
+  margin-bottom: 100px;
+}
+.aboutuscontent1 {
+  margin-bottom: 100px;
+}
+.aboutuscontent2 {
+  background: url(assets/images/about-bg.jpg) no-repeat fixed top center;
+  color: #fff;
+}
+.aboutuscontent2 h4 {
+  font-size: 40px;
+  text-align: center;
+  color: #fff;
+}
+.about-container p {
+  padding: 10px 0 0 0;
+}
+.aboutuscontent2 h4 b {
+  font-size: 60px;
+}
+.toggle-btn span img {
+  margin: 35px 8px 0 0;
+  background: none !important;
+  border: none !important;
+}
+.toggle-btn button:focus {
+  outline: none;
+  margin: 35px 8px 0 0;
+  background: none;
+  border: none;
+}
+
+.search-icon img {
+  position: absolute;
+  z-index: 999;
+  top: 40px;
+  right: 100px;
+}
+
+.footer-links h4 {
+  font-family: "Avenir";
+  color: #9ca3a9;
+  font-size: 15px;
+}
+.footer-social-media span i {
+  color: #b1b6ba;
+  border: 1px solid #b1b6ba;
+  padding: 3px;
+}
+.footer-social-media span a {
+  text-decoration: none;
+}
+.footer-social-media {
+  padding: 5px 0 0 15px;
+}
+.footer-social-media .linkedin a i {
+  margin: 0px !important;
+  border-radius: 15px !important;
+  padding: 5px 5px 5px 5px !important;
+}
+
+.footer-social-media .facebook a i {
+  margin: 0px 0 0 15px !important;
+  border-radius: 15px !important;
+  padding: 5px 7px 5px 7px !important;
+}
+.footer-video-link a img {
+  padding: 8px 0px 0px 0px !important;
+  float: right;
+}
+@-webkit-keyframes zoomin {
+  0% {
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+  }
+}
+
+.banne_inner {
+  color: #fff;
+}
+.banne_inner .page-heading {
+  color: #fff;
+  font-family: "futura_md_btmedium_italic";
+  text-transform: uppercase;
+  font-size: 60px;
+  padding-top: 230px;
+}
+
+/* payroll page */
+
+.payrollbanner img {
+  width: 100%;
+}
+.pagebg {
+  background-image: url("assets/images/pagebackground.jpg");
+  overflow: hidden;
+  z-index: 999;
+  position: relative;
+}
+/* .payrollservices {text-align: left;} */
+/* .payrollcontent p { text-align: center;} */
+/* side nav */
+.mat-drawer-container {
+  position: fixed !important;
+  z-index: 1;
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  display: block;
+  overflow: hidden;
+  height: 100% !important;
+  right: 0 !important;
+  top: 0 !important;
+}
+
+.side-nav li {
+  padding: 15px;
+}
+
+.side-nav li a {
+  padding: 15px;
+}
+
+.side-nav {
+  /* min-width: 250px; */
+  /* max-width: 303px; */
+  height: 100%;
+  width: 304px;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* top layer */
+  z-index: 9999;
+}
+
+.toggle-btn img {
+  padding: 18px 10px 10px 13px;
+}
+.no-border {
+  border: none !important;
+}
+
+.closenav-btn a {
+  font-size: 40px !important;
+  position: relative;
+  top: 0;
+  left: -200px;
+  border: none;
+}
+.closenav-btn a:hover {
+  font-size: 45px !important;
+  color: white !important;
+  opacity: 1;
+  transition: 0.3s !important;
+}
+.nav-menu {
+  padding: 15px 0 0 0;
+}
+
+.wrapper {
+  display: block;
+}
+
+#sidebar {
+  min-width: 250px;
+  max-width: 250px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* top layer */
+  z-index: 9999;
+  transition: 0.5s;
+
+  background: #000;
+  opacity: 0.9;
+  transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+}
+
+#dismiss {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  /* top right corner of the sidebar */
+  top: 10px;
+  right: 10px;
+}
+
+/* sidenav */
+/* Skwed */
+.p-relative {
+  position: relative;
+}
+.p-absolute {
+  position: absolute;
+}
+.content-bannerBack {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 48%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 48%, 0 100%);
+}
+.content-bannerBack img {
+  width: 100%;
+}
+.content-inner-banner {
+  margin: auto;
+  left: 0px;
+  right: 0px;
+  top: 20%;
+}
+.content-inner-banner img {
+  border: 5px solid #fff;
+  border-radius: 5px;
+}
+
+/* page navigation styles */
+
+.slider__button--prev {
+  left: 0;
+  text-align: right;
+}
+.slider__button:hover {
+  width: 100px;
+}
+.slider__button {
+  opacity: 0.8;
+  position: fixed;
+  width: 85px;
+  top: 50%;
+  -webkit-transform: translateY(-50%) translateX(0);
+  transform: translateY(-50%) translateX(0);
+  padding: 10px 0;
+  color: #fbfbfb;
+  display: block;
+  z-index: 100;
+  font-family: Tungsten;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  -webkit-transition: color 0.3s, width 0.3s ease-out,
+    -webkit-transform 0.3s ease-out;
+  transition: color 0.3s, width 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, color 0.3s, width 0.3s ease-out;
+  transition: transform 0.3s ease-out, color 0.3s, width 0.3s ease-out,
+    -webkit-transform 0.3s ease-out;
+}
+.slider__button:hover:after {
+  width: 45px;
+}
+
+.slider__button--prev:after {
+  left: 0;
+}
+
+.slider__button:after {
+  content: "";
+  width: 35px;
+  height: 1px;
+  background: #fbfbfb;
+  position: absolute;
+  top: calc(50% - 1px);
+  -webkit-transition: width 0.3s ease-out, background 0.3s;
+  transition: width 0.3s ease-out, background 0.3s;
+}
+.slider__button--next {
+  text-align: left;
+  right: 0;
+}
+.slider__button--next:after {
+  right: 0;
+}
+.page-nav a {
+  text-decoration: none;
+  font-family: "Avenir";
+  color: #fff;
+}
+.page-scroll-header a {
+  color: #333 !important;
+}
+
+.page-scroll-header a:after {
+  background: #333 !important;
+}
+
+/* page navigation styles */
+
+/* Global Button Styles */
+a.animated-button:link,
+a.animated-button:visited {
+  position: relative;
+  display: block;
+  margin: 30px auto 0;
+  padding: 10px 15px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  letter-spacing: 0.08em;
+  border-radius: 0;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  width: 200px;
+  border-radius: 50px;
+}
+a.animated-button:link:after,
+a.animated-button:visited:after {
+  content: "";
+  position: absolute;
+  height: 0%;
+  left: 50%;
+  top: 50%;
+  width: 150%;
+  z-index: -1;
+  -webkit-transition: all 0.75s ease 0s;
+  -moz-transition: all 0.75s ease 0s;
+  -o-transition: all 0.75s ease 0s;
+  transition: all 0.75s ease 0s;
+  opacity: 1;
+}
+a.animated-button:link:hover,
+a.animated-button:visited:hover {
+  color: #000;
+  text-shadow: none;
+}
+a.animated-button:link:hover:after,
+a.animated-button:visited:hover:after {
+  height: 450%;
+}
+a.animated-button.victoria-two {
+  border: 2px solid #fff;
+}
+a.animated-button.victoria-two:after {
+  background: #fff;
+  -moz-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+  -ms-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+  transform: translateX(-50%) translateY(-50%) rotate(25deg);
+}
+
+.menu .open-menu-button:hover {
+}
+.menu .open-menu-button {
+  /* position: absolute; */
+  /* right: 40px; */
+  /* top: 38px; */
+  display: block;
+  width: 55px;
+  height: 30px;
+
+  -webkit-transition: border 0.4s ease-out;
+  transition: border 0.4s ease-out;
+  border-radius: 3px;
+}
+.menu .open-menu-button span {
+  height: 1px;
+  background: #fbfbfb;
+  display: block;
+  width: 55%;
+  margin: 6px auto 0 auto;
+}
+
+.section-contact {
+  display: table;
+  height: 100%;
+  width: 100%;
+  font-family: FontAwesome;
+}
+.main-text {
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+}
+.section-contact .content {
+  padding: 42px 0 0 0;
+}
+.typewriter {
+  display: inline-block;
+  margin: 0 0 10px;
+  text-align: left;
+}
+.contactus-logo img {
+  padding: 0 0 40px 0;
+}
+.typewriter h1 {
+  color: #000;
+  font-family: Avenir;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 5px solid #000; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0px; /* Adjust as needed */
+
+  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+  font-weight: normal;
+  font-size: 48px;
+  width: auto;
+  display: inline-block;
+}
+.typewriter h1 span,
+form p label {
+  font-family: "Avenir";
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #000;
+  }
+}
+form {
+  display: inline-block;
+  width: 100%;
+  font-family: "poor_richardregular";
+}
+form p {
+  display: inline-block;
+  width: 100%;
+  margin: 10px 6px 0 0;
+}
+form p label {
+  display: block;
+  margin: 0 0 5px;
+  text-align: left;
+  color: #000;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 20px;
+}
+form p input {
+  width: 100%;
+  background: #fff;
+  color: #000;
+  padding: 5px 0 5px 0;
+  border: none;
+  border-bottom: 1px solid #a6a6a6;
+  width: 93%;
+  font-size: 18px;
+  outline: none;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+form p input:focus {
+  border-bottom: 2px solid black;
+  padding-left: 15px !important;
+}
+
+form p.textarea {
+  display: inline-block;
+  width: 98%;
+  margin: 15px 0 0 0;
+}
+form p textarea {
+  width: 100%;
+  background: #fff;
+  color: #000;
+  padding: 5px;
+  border: none;
+  font-size: 20px;
+  border-bottom: 2px solid #a6a6a6;
+  width: 98%;
+  height: 110px;
+  outline: none;
+}
+
+.scroll-icon p a {
+}
+.bounce img {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+  width: 25px;
+}
+
+@-moz-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+  60% {
+    -moz-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+  60% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+  60% {
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+form button {
+  padding: 15px 30px;
+  font-family: "Avenir";
+  font-weight: 600;
+  color: #1a84c6;
+  border: none;
+  background: #f2f2f2;
+  cursor: pointer;
+  font-size: 18px;
+  background: linear-gradient(to right, #1a84c6 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
+}
+form button:hover {
+  background-position: left bottom;
+  color: white;
+}
+.contactus-giveusacall {
+  width: 45%;
+  font-size: 17px;
+
+  color: #e06730;
+  line-height: 22px;
+}
+.contactus-giveusacall span {
+  font-weight: bold;
+  color: #1a84c6;
+}
+.contact-map-address h4 {
+  font-family: "Avenir";
+  text-align: center;
+  color: #1a84c6;
+  padding: 0 0 30px 0;
+  font-size: 40px;
+}
+.contact-map-address p {
+  text-align: center;
+}
+.contact-map-address .office-add-heading {
+  font-size: 25px;
+  color: #6e7982;
+  font-weight: 600;
+  padding: 25px 0 15px 80px;
+  text-align: left !important;
+}
+.office-address .office-address-abb a {
+  color: #868f96;
+  text-decoration: underline;
+  font-size: 16px;
+  font-weight: 600;
+}
+.office-address .office-address-full p {
+  font-size: 16px;
+  color: #1a84c6;
+  font-weight: 600;
+  text-align: left;
+  width: 280px;
+  max-width: 280px;
+}
+.scroll-icon p {
+  text-align: center;
+}
+.scroll-icon {
+  padding: 10px 0 0 0;
+}
+.content form input:active {
+  border-bottom: 1px solid #a6a6a6;
+}
+.contactus-support h4 {
+  font-family: "Avenir";
+  font-size: 30px;
+}
+
+.service-support h4 {
+  font-size: 25px;
+  color: #868f96;
+}
+.service-support {
+  line-height: 50px;
+}
+.service-support p {
+  color: #868f96;
+  font-size: 15px;
+  line-height: 30px;
+}
+.service-support p a {
+  color: #868f96;
+  font-size: 15px;
+  text-decoration: underline;
+  text-decoration-color: #868f96;
+}
+
+.office-address-abb button :hover {
+  background-color: #fff;
+}
+/*   ------------contactus page tab   -------   */
+.tab {
+  float: left;
+
+  width: 40%;
+  height: 180px;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  display: block;
+  font-family: "Avenir";
+  color: #868f96;
+  text-decoration: underline;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #fff;
+  padding: 0px 0px 35px 65px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #fff;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #fff;
+  width: 70%;
+  border-left: none;
+  height: 300px;
+}
+.office-po-2 {
+  padding: 46px 0 0 0;
+}
+.office-po-3 {
+  padding: 50px 0 0 0;
+}
+
+/* ----------contactus page tab---------   */
+.menu-items-contactus {
+  position: absolute;
+  top: 25px;
+  right: 140px;
+}
+.menu-items-contactus button {
+  background: none;
+  border: none;
+  padding: 0 15px 0 0;
+}
+.suppies-forms-btn {
+  padding: 10px 0px 30px 0px;
+}
+.suppies-forms-btn button {
+  padding: 42px 0 42px 0px;
+  font-family: "Avenir";
+  color: #fff;
+  background-color: #898c8e;
+  border-radius: 0px;
+  outline: none;
+}
+.suppies-forms-btn button:hover {
+  padding: 42px 0 42px 0px;
+  font-family: "Avenir";
+  color: #fff;
+}
+.suppies-forms-btn button:active {
+  padding: 42px 0 42px 0px;
+  font-family: "Avenir";
+  color: #fff;
+  outline: none;
+}
+.suppies-forms-btn button span {
+  font-size: 18px;
+}
+@media screen and (max-width: 1099px) {
+  .content {
+    width: 100%;
+  }
+  .typewriter h1 {
+    font-size: 23px;
+  }
+}
+@media screen and (max-width: 800px) {
+  form p {
+    margin: 0px 0 10px 0;
+    width: 100%;
+  }
+  .content {
+    width: 100%;
+  }
+  .typewriter h1 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 650px) {
+  form p {
+    margin: 0px 0 10px 0;
+    width: 100%;
+  }
+  .content {
+    width: 100%;
+  }
+  .typewriter h1 {
+    font-size: 15px;
+  }
+}
+
+.footer-links {
+  float: right;
+  margin: 10px 0 0 0;
+}
+.footer-links ul {
+  margin: 0;
+  padding: 0;
+}
+.footer-links ul li {
+  margin: 0 0px 0 5px;
+  list-style: none;
+  color: #727272;
+  display: inline-block;
+  font-size: 20px;
+  font-family: "poor_richardregular";
+  font-style: italic;
+}
+.footer-links ul li a {
+  color: #727272;
+  margin-right: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.footer-links ul li a:hover {
+  color: #000;
+}
+
+.search-heading {
+  padding: 30px 0 0 0;
+}
+
+.search-btn {
+  background: transparent !important;
+  border: none !important;
+  outline: none;
+  transition: transform 1s;
+}
+
+.search-btn:active {
+  background: transparent !important;
+  border: none !important;
+  outline: none;
+}
+
+.cursor {
+  position: relative;
+}
+.cursor i {
+  position: absolute;
+  width: 1px;
+  height: 76%;
+  background-color: #d6d6d6;
+  left: 480px;
+  top: 20%;
+  -webkit-animation-name: blink;
+  animation-name: blink;
+  -webkit-animation-duration: 800ms;
+  animation-duration: 800ms;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  opacity: 1;
+}
+
+.cursor input:focus + i {
+  display: none;
+}
+
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+input::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.search-submit-btn {
+  margin: 1px 0 0 25px;
+  color: white;
+  background: transparent;
+  border: 1px solid;
+  border-radius: 30px;
+  padding: 10px 20px 10px 20px;
+  font-size: 15px;
+}
+/* ----------Health care page---------   */
+.healthcare-heading h2 {
+  font-size: 70px;
+}
+.healthcare-heading h1 h3 {
+  font-family: "Avenir";
+}
+
+.font-family-avenir {
+  font-family: "Avenir";
+}
+.healthcare-heading h4 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.healthcare-heading p {
+  font-size: 20px;
+  padding: 35px 0 0 0;
+}
+.hc-insurance {
+  padding: 10px 0 0 2px;
+  text-align: right !important;
+}
+.hc-insurance-left {
+  padding: 0 25px 0 0;
+}
+.hc-admin-left {
+  padding: 0 30px 0 0;
+}
+.hc-insurance-left h3 {
+  font-size: 50px;
+  text-align: right;
+  padding: 52px 52px 0 0;
+}
+.hc-insurance-left h3 :after {
+  position: absolute;
+  top: 51%;
+  overflow: hidden;
+  width: 50%;
+  height: 1px;
+  content: "\a0";
+  background-color: red;
+}
+.hc-insurance-left p {
+  font-size: 18px;
+  padding: 22px 52px 0 0;
+}
+.hc-insurance-right ul {
+  list-style: none;
+  text-align: left;
+}
+.hc-insurance-right ul li {
+  padding: 6px 0 5px 0px;
+}
+.hc-insurance-right {
+  padding: 0px;
+}
+
+.text-left {
+  text-align: left !important;
+}
+.text-right {
+  text-align: right !important;
+}
+.hc-admin {
+  padding: 70px 0 0 0px;
+}
+.hc-admin ul {
+  list-style: none;
+  text-align: right;
+}
+.hc-admin ul li {
+  padding: 6px 0 5px 20px;
+}
+.hc-admin-right {
+  padding: 0 0 0 70px;
+}
+.hc-admin-right h4 {
+  font-size: 50px;
+
+  padding: 52px 0 0 0;
+}
+.hc-admin-right p {
+  font-size: 18px;
+  padding: 22px 0 0 0;
+}
+.hc-disclore-list ul {
+  margin: 15px 0 0 0 !important;
+  list-style: none;
+  text-align: left;
+}
+.hc-disclore-list ul li {
+  padding: 6px 0 5px 20px;
+}
+.hc-contactus-link {
+  padding: 35px 0 35px 0;
+  background: #898c8e;
+}
+.mt60 {
+  margin-top: 60px;
+}
+
+.report-align {
+  padding: 0px 52px 0px !important;
+}
+.end-circle img {
+  width: 12px;
+  margin: 0 0px 3px 0;
+}
+/* ----------Health care page---------   */
+/*---------------payroll page --------*/
+.payroll-headding p {
+  padding: 35px 60px 0px 60px;
+}
+.payroll-page .hc-insurance-left p {
+  font-size: 18px;
+  padding: 0px 52px 0 0;
+}
+.payroll-page .hc-admin-right p {
+  font-size: 18px;
+  padding: 0px 52px 0 0;
+}
+
+.payroll-page .hc-insurance {
+  padding: 10px 0 40px 2px;
+  text-align: right !important;
+}
+.payroll-page .hc-admin {
+  padding: 10px 0 40px 2px;
+  text-align: right !important;
+}
+.staff-desc {
+  margin: 0px;
+
+  padding: 35px 0 0 0;
+  font-size: 19px;
+}
+.hc-insurance-left h5 {
+  font-size: 26px;
+  text-align: right;
+  padding: 70px 52px 0 0;
+  color: #b6b8b9;
+  opacity: 1;
+}
+.hc-insurance-left h5:after {
+  background-color: #b6b8b9;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  position: absolute;
+  vertical-align: middle;
+  width: 10%;
+  right: 0px;
+  top: 94px;
+}
+.hc-admin-right h5 {
+  font-size: 26px;
+  text-align: left;
+  padding: 65px 52px 0 0;
+  color: #b6b8b9;
+  opacity: 1;
+}
+.hc-admin-right h5:before {
+  background-color: #b6b8b9;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  position: absolute;
+  vertical-align: middle;
+  width: 10%;
+  left: 0px;
+  top: 90px;
+}
+.payroll-img {
+  height: 233px;
+  width: 80%;
+}
